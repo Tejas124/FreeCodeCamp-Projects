@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" name="text" type="text" placeholder="Enter your name" required /></label>
+
+        <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="Enter your Email"/></label>
+
+        <label id="number-label" for="age">Age(optional) <input id="number" placeholder="Age" type="number" min="13" max="120"></label>
+
+        <label>Which option best describes your current role?</label>
+          <label>
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?
+        <label><input type="radio" name="recommend" value="any-one" class="inline"/> Definitely</label>
+        <label><input type="radio" name="recommend" value="any-one" class="inline"/> Maybe</label>
+        <label><input type="radio" name="recommend" value="any-one" class="inline"/> Not sure</label>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label>What is your favorite feature of freeCodeCamp?</label>
+          <label>
+            <select>
+              <option value="">Select an option</option>
+              <option value="1">Challenges</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+              <option value="4">Opensource</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label>What would you like to see improved? (Check all that apply)</label>
+          <label><input type="checkbox" name="fields" class="inline" value="any-one"/> Front-end Projects</label>
+          <label><input type="checkbox" name="fields" class="inline" value="any-one"/> Back-end Projects</label>
+          <label><input type="checkbox" name="fields" class="inline" value="any-one"/> Data Visualization</label>
+          <label><input type="checkbox" name="fields" class="inline" value="any-one"/> Challenges</label>
+          <label><input type="checkbox" name="fields" class="inline" value="any-one"/> Open Source Community</label>
+        </fieldset>
+        <fieldset>
+          <label>Any comments or suggestions?</label>
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+    <input type="submit" id="submit"/>
+    </form>
+  </body>  
+</html>
